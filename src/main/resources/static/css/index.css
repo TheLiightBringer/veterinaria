@@ -1,0 +1,66 @@
+.footer{
+    background: linear-gradient(90deg, purple, rgb(151, 48, 219));
+}
+.footer a{
+    color: bisque;
+}
+.header img{
+    width: 250px;
+}
+#main .carousel-inner img{
+    max-height: 70vh;
+    object-fit: fill;
+    filter: grayscale(50%);
+}
+#carousel{
+    position: relative;
+
+}
+#carousel .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1;
+}
+#carousel .overlay .container,
+#carousel .overlay .row{
+    height: 100% ;
+}
+.text-tienda{
+    color: black !important;
+}
+.btn-crepza{
+    background-color: rgb(130, 52, 150);
+    color: white;
+}
+.btn-crepza:hover{
+    background-color: rgb(93, 37, 107);
+    color: white;
+}
+#news img{
+    max-width: 100%;
+
+}
+#news{
+    background-color: rgb(243, 229, 212);
+    color: rgb(31, 28, 28);
+}
+.aliado img{
+    width: 100px;
+    height: 100px;
+    padding-top: 4px;
+    border-left: 5px;
+    border-right: 5px;
+}
+.modelo img{
+    width: 500px;
+    height: 500px;
+    align-items: flex-end;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+}

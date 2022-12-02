@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="/CSS/form.css" rel="stylesheet">
+    <title>Registro veterinario | VetClinic</title>
+</head>
+<body>
+    <form th:action="@{/register}" th:object="${usuario}" method="post">
+        <div id="form-main-container">
+            <div id="form-area">
+                <div id="form-title">
+                    Registrar nuevo usuario
+                </div>
+                <div id="form-body">
+                    <div>
+                        <div class="col-12">
+                            <fieldset class="form-group">
+                                <label class="form-label" for="input6">Nombre:</label>
+                                <input type="text" th:field="*{nombre}" class="form-control" id="input6" placeholder="Nombre de usuario" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-12">
+                            <fieldset class="form-group">
+                                <label class="form-label" for="input7">Correo:</label>
+                                <input type="email" th:field="*{correo}" class="form-control" id="input7" placeholder="Correo de usuario" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-12">
+                            <fieldset class="form-group">
+                                <label class="form-label" for="input4">Username: (10 Caracteres)</label>
+                                <input type="text" th:field="*{username}" class="form-control" id="input4" placeholder="Username" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-12">
+                            <fieldset class="form-group">
+                                <label class="form-label" for="input5">Contraseña: (10 Caracteres)</label>
+                                <input type="password" th:field="*{password}" class="form-control" id="input5" placeholder="Contraseña de usuario" required>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="center-text button-area">
+                            <button type="submit" class="btn btn-cancel">Registrarse</button>
+                            <button type="button" class="btn btn-send" onclick="window.location.href='/login.html'">Iniciar Sesion</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
